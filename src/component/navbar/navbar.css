@@ -1,0 +1,194 @@
+.bg-navbar-container {
+    background-color: #fafafa !important;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+}
+.navbar-collapse-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.modal.show .modal-dialog {
+    transform: none;
+    z-index: 5;
+    position: relative;
+}
+
+span.user-navbar-logo {
+    width: 130px;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+}
+span.user-navbar-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.user-navbar-content-link {
+    width: 110px;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    cursor: pointer;
+    text-align: center;
+}
+.user-navbar-content-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
+}
+.btn-primary-content-navbar {
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    color: #666666 !important;
+    background-color: #fff !important;
+    border-radius: 20px !important;
+    width: 130px !important;
+    padding: 5px !important;
+    text-align: center !important;
+    border: none !important;
+    outline: none !important;
+    text-transform: capitalize;
+}
+.input-group-content-container {
+    width: auto;
+    padding: 10px;
+}
+.form-control-input-content {
+    height: 46px;
+    border-radius: 0px;
+}
+.form-control-input-content:focus {
+    box-shadow: none;
+    outline: none;
+}
+.form-control-input-dropdown {
+    border: 1px solid #e1e1e1;
+    border-top-left-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+    background-color: transparent;
+    padding-left: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1b1b1b;
+    width: 140px;
+}
+.input-group-content-left {
+    flex: 1;
+}
+.input-group-content-right {
+    flex: 4;
+}
+.form-control-input-search {
+    flex: 4 !important;
+    border: 1px solid #e1e1e1;
+    border-top-right-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9e9e9e;
+    padding: 10px 37px;
+}
+.form-control-input-search::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #9e9e9e;
+}
+span.user-location-label {
+    position: absolute;
+    left: 13px;
+    top: 9px;
+}
+span.user-location-label-account {
+    position: absolute;
+    left: 2px;
+    top: 4px;
+}
+span.user-location-label-account img {
+    width: 40px;
+    height: 40px;
+}
+span.user-location-label-mic {
+    right: 15px;
+    position: absolute;
+    top: 10px;
+}
+span.user-location-label-mic img {
+    width: 20px;
+    height: 20px;
+}
+span.user-location-label img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+span.user-location-label-search {
+    position: absolute;
+    left: 10px;
+    top: 9px;
+}
+span.user-location-label-search img {
+    vertical-align: text-top;
+    width: 21px;
+    height: 21px;
+}
+.user-form-contact-list {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+span.contact-phone-list {
+    margin-right: 8px;
+}
+p.contact-phone-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #1b1b1b;
+    margin-bottom: 0px;
+}
+.form-control-input-user {
+    border: none !important;
+    background-color: transparent;
+    width: 130px;
+    padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+    .user-navbar-content-link {
+        text-align: left !important;
+    }
+    .navbar-collapse-content {
+        justify-content: left;
+        text-align: left;
+        align-items: flex-start;
+        max-height: 100% !important;
+    }
+    .btn-primary-content-navbar {
+        width: 200px;
+        margin: 20px 0px;
+    }
+}
+@media (min-width: 991px) {
+    .input-group-content-container {
+        width: 600px;
+        padding: 10px;
+    }
+    .bg-navbar-container {
+        height: 75px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .input-group-content-container {
+        width: 430px;
+        padding: 10px;
+    }
+}
+@media (min-width: 300px) and (max-width: 991px) {
+    .user-form-contact-list {
+        margin: 10px;
+    }
+}
